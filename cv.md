@@ -21,3 +21,18 @@ VS Code, GitHub, Bootstrap*
 - I solve initial level js problems on codewars 7 - 6 kyu ;
 - In addition, I use the freecodecamp service for training.
 ***
+## Code Example:
+```
+function areYouPlayingBanjo(name) {
+  if (name[0] == 'R' || name[0] == 'r')
+    return `${name} plays banjo`;
+  else
+    return name + " does not play banjo";
+}
+```
+***
+### Other skills
+*Languages*
+1. English - B1
+2. Ukrainian - native
+3. Russian - native
