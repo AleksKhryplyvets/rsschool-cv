@@ -68,7 +68,15 @@ img {
   text-align: center;
   margin-bottom: 24px;
 }
-
+.nav__menu {
+  margin-top: 20px;
+}
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 .nav__link {
   padding: 14px 10px;
   line-height: 50px;
@@ -115,4 +123,76 @@ img {
 .main-info__social {
   margin-bottom: 16px;
   font-size: 16px;
+}
+.education__content,
+.skills__content {
+  display: flex;
+  margin-bottom: 20px;
+}
+.education__ball,
+.skills__decor {
+  padding-right: 16px;
+}
+
+.education__rouder,
+.skills__rouder {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.education__info,
+.skills__info {
+  gap: 0.5rem;
+}
+
+.education__title {
+  font-size: 16px;
+}
+.education__name {
+  font-size: 14px;
+  color: var(--title-color);
+}
+
+.education__year {
+  font-size: 14px;
+}
+
+.language__name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.language__circle {
+  display: inline-block;
+  background-color: var(--tetx-color);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.skills__line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(7px, 0);
+}
+.project__title {
+  color: var(--title-color);
+  font-weight: 600;
+  display: block;
+  margin-top: 23px;
+  font-size: 16px;
+}
+.project__title > span {
+  color: var(--first-color);
+}
+.project__description {
+  margin-top: 8px;
 }
