@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --first-color: #6e57e0;
+  --second-color: #ede9ff;
+  --title-color: #242329;
+  --tetx-color: #6d6a7c;
+  --body-color: #f8f7fd;
+  --container-color: #fff;
+  --body-font: "Poppins", sans-serif;
+  --normal-font-size: 14px;
+  --big-font: 32px;
+  --small-font: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--tetx-color);
+}
+
+.container {
+  max-width: 968px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+h1,
+h2 {
+  color: var(--title-color);
+  font-weight: 600;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--tetx-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 32px 0 64px;
+}
+.section-title {
+  font-size: 20px;
+  color: var(--title-color);
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.nav__menu {
+  margin-top: 20px;
+}
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__link {
+  padding: 14px 10px;
+  line-height: 50px;
+  transition: all 0.4s;
+}
+.nav__link:hover {
+  color: var(--title-color);
+  background-color: var(--second-color);
+  border-radius: 25%;
+}
+
+.main-info {
+  position: relative;
+}
+.main-info__container {
+  margin-top: 24px;
+}
+
+.main-info__data {
+  gap: 8px;
+  text-align: center;
+}
+
+.main-info__avatar {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  border-radius: 33%;
+}
+
+.main-info__title {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.main-info__pro {
+  font-size: var(--normal-font-size);
+  margin-bottom: 50px;
+}
+.main-info__contacts {
+  font-size: var(--small-font);
+}
+.main-info__social {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.education__content,
+.skills__content {
+  display: flex;
+  margin-bottom: 20px;
+}
+.education__ball,
+.skills__decor {
+  padding-right: 16px;
+}
+
+.education__rouder,
+.skills__rouder {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.education__info,
+.skills__info {
+  gap: 0.5rem;
+}
+
+.education__title {
+  font-size: 16px;
+}
+.education__name {
+  font-size: 14px;
+  color: var(--title-color);
+}
+
+.education__year {
+  font-size: 14px;
+}
+
+.language__name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.language__circle {
+  display: inline-block;
+  background-color: var(--tetx-color);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.skills__line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(7px, 0);
+}
+.project__title {
+  color: var(--title-color);
+  font-weight: 600;
+  display: block;
+  margin-top: 23px;
+  font-size: 16px;
+}
+.project__title > span {
+  color: var(--first-color);
+}
+.project__description {
+  margin-top: 8px;
+}
+
+.footer {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 20px 60px 20px 60px;
+  color: var(--title-color);
+  background-color: var(--first-color);
+}
+.footer__link {
+  color: var(--title-color);
+  position: relative;
+  padding-left: 40px;
+}
+
+.footer__year {
+  justify-self: center;
+}
+.footer__rss {
+  justify-self: end;
+  height: 32px;
+}
+
+@media screen and (min-width: 968px) {
+  body {
+    margin: 24px 0;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cv {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  }
+  .cv__left {
+    background-color: var(--second-color);
+  }
+
+  .cv__left,
+  .cv__right {
+    padding: 0 24px;
+  }
+
+  .section-title,
+  .project__description {
+    text-align: initial;
+  }
+
+  .language__name {
+    justify-content: flex-start;
+  }
+  .education {
+    padding: 32px 0 32px 0;
+  }
+  .about {
+    padding: 165px 0 32px 0;
+  }
+  .skills__line {
+    height: 118%;
+  }
+}
