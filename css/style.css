@@ -196,3 +196,68 @@ img {
 .project__description {
   margin-top: 8px;
 }
+
+.footer {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 20px 60px 20px 60px;
+  color: var(--title-color);
+  background-color: var(--first-color);
+}
+.footer__link {
+  color: var(--title-color);
+  position: relative;
+  padding-left: 40px;
+}
+
+.footer__year {
+  justify-self: center;
+}
+.footer__rss {
+  justify-self: end;
+  height: 32px;
+}
+
+@media screen and (min-width: 968px) {
+  body {
+    margin: 24px 0;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cv {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  }
+  .cv__left {
+    background-color: var(--second-color);
+  }
+
+  .cv__left,
+  .cv__right {
+    padding: 0 24px;
+  }
+
+  .section-title,
+  .project__description {
+    text-align: initial;
+  }
+
+  .language__name {
+    justify-content: flex-start;
+  }
+  .education {
+    padding: 32px 0 32px 0;
+  }
+  .about {
+    padding: 165px 0 32px 0;
+  }
+  .skills__line {
+    height: 118%;
+  }
+}
